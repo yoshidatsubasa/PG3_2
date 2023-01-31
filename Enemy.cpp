@@ -3,4 +3,5 @@
 void Enemy::StaDeath()
 {
 	IsAlive = 0;
+
 }
