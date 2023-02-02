@@ -2,6 +2,6 @@
 
 void Enemy::StaDeath()
 {
-	IsAlive = 0;
+	enemyCount = 0;
 
 }

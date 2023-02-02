@@ -3,12 +3,12 @@ class Enemy
 {
 public:
 
-	static int IsAlive;
+	static int enemyCount;
 
 public:
 
-	Enemy() { IsAlive++; }
-	~Enemy() { IsAlive--; }
+	Enemy() { enemyCount++; }
+	~Enemy() { enemyCount--; }
 
 	void StaDeath();
 

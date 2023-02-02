@@ -4,7 +4,7 @@
 #include "Enemy.h"
 using namespace std;
 
-int Enemy::IsAlive;
+int Enemy::enemyCount;
 
 int main()
 {
@@ -12,21 +12,25 @@ int main()
     Enemy* enemy2 = new Enemy;
     Enemy* enemy3 = new Enemy;
 
-    cout << Enemy::IsAlive << endl;
+    cout << Enemy::enemyCount << endl;
 
 
 
-    while (Enemy::IsAlive > 0)
+    while (Enemy::enemyCount > 0)
     {
 
-        cout << " IsAlive = " << Enemy::IsAlive << endl;
+        cout << " enemyCount = " << Enemy::enemyCount << endl;
 
         Sleep(3 * 1000);
         enemy1->StaDeath();
 
 
-        cout << " IsAlive = " << Enemy::IsAlive << endl;
+        cout << " enemyCount = " << Enemy::enemyCount << endl;
     }
+
+    delete enemy1;
+    delete enemy2;
+    delete enemy3;
 
     return 0;
 
